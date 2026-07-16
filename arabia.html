@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARABIA SYSTEM</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte futurista -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- ==========================
+     TELA DE INICIALIZAÇÃO
+========================== -->
+
+<section id="bootScreen">
+
+    <div class="boot-container">
+
+        <h1>ARABIA SYSTEM</h1>
+
+        <div id="bootText"></div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <p id="status">
+            INITIALIZING SYSTEM...
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ==========================
+          LOGIN
+========================== -->
+
+<section id="loginScreen" class="hidden">
+
+    <div class="login-box">
+
+        <h1>ARABIA</h1>
+
+        <span class="subtitle">
+            SECURE ACCESS PANEL
+        </span>
+
+
+        <input 
+        type="text" 
+        id="username"
+        placeholder="USERNAME">
+
+
+        <input 
+        type="password"
+        id="password"
+        placeholder="PASSWORD">
+
+
+        <button onclick="login()">
+            ACCESS
+        </button>
+
+
+        <p id="loginMessage"></p>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- ==========================
+          TABLET
+========================== -->
+
+
+<section id="tablet" class="hidden">
+
+
+    <header>
+
+        <h1>
+            ARABIA
+        </h1>
+
+        <div class="info">
+
+            <span id="clock">
+                00:00
+            </span>
+
+            <span id="date">
+                DATA
+            </span>
+
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+    <!-- MENU LATERAL -->
+
+    <aside>
+
+
+        <div class="menu-item" onclick="openTab('players')">
+
+            <span class="icon">
+                👥
+            </span>
+
+            <span class="label">
+                PLAYERS
+            </span>
+
+        </div>
+
+
+
+        <div class="menu-item" onclick="openTab('highlights')">
+
+            <span class="icon">
+                📷
+            </span>
+
+            <span class="label">
+                HIGHLIGHTS
+            </span>
+
+        </div>
+
+
+
+
+        <div class="menu-item" onclick="openTab('mural')">
+
+            <span class="icon">
+                📰
+            </span>
+
+            <span class="label">
+                MURAL
+            </span>
+
+        </div>
+
+
+
+    </aside>
+
+
+
+
+
+
+
+    <!-- CONTEÚDO -->
+
+
+    <main>
+
+
+
+        <!-- PLAYERS -->
+
+        <div id="players" class="tab active">
+
+
+            <h2>
+                PLAYERS
+            </h2>
+
+
+            <div class="players-container">
+
+
+                <div class="player-card">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <h3>
+                        RENNERG0D
+                    </h3>
+
+                    <p>
+                        ONLINE
+                    </p>
+
+                </div>
+
+
+
+                <div class="player-card">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <h3>
+                        JOÃOTRY
+                    </h3>
+
+                    <p>
+                        ONLINE
+                    </p>
+
+                </div>
+
+
+
+                <div class="player-card">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <h3>
+                        SXVEN
+                    </h3>
+
+                    <p>
+                        ONLINE
+                    </p>
+
+                </div>
+
+                <div class="player-card">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <h3>
+                        FACETRACK
+                    </h3>
+
+                    <p>
+                        ONLINE
+                    </p>
+
+                </div>
+
+
+
+                <div class="player-card">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <h3>
+                        ZELZIS
+                    </h3>
+
+                    <p>
+                        ONLINE
+                    </p>
+
+                </div>
+
+
+
+                <div class="player-card">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <h3>
+                        LCccd
+                    </h3>
+
+                    <p>
+                        ONLINE
+                    </p>
+
+                </div>
+
+                <div class="player-card">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <h3>
+                        JOSIAS
+                    </h3>
+
+                    <p>
+                        ONLINE
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- HIGHLIGHTS -->
+
+
+        <!-- HIGHLIGHTS -->
+
+
+<div id="highlights" class="tab">
+
+
+    <h2>
+        HIGHLIGHTS
+    </h2>
+
+
+    <div class="highlights-container">
+
+
+
+        <div class="highlight-card" onclick="pauseMusic()">
+
+            <h3>
+                RENNERG0D
+            </h3>
+
+            <iframe 
+            src="https://drive.google.com/file/d/1SxHFFtMYMvetuJNYz8FnbK1xryxzAKZE/preview?mute=1"
+            allow="autoplay">
+            </iframe>
+
+        </div>
+
+
+
+
+        <div class="highlight-card" onclick="pauseMusic()">
+
+            <h3>
+                JOÃOTRY
+            </h3>
+
+            <iframe 
+            src="https://drive.google.com/file/d/1obc0WbDmE-X1-Ju_ZAu1wXiyT-g9uWEo/preview?mute=1"
+            allow="autoplay">
+            </iframe>
+
+        </div>
+
+
+
+
+        <div class="highlight-card" onclick="pauseMusic()">
+
+            <h3>
+                SXVEN
+            </h3>
+
+            <iframe 
+            src="https://drive.google.com/file/d/1bJPeHtMASWdCSnC0aLSgcQo7-wkHOad7/preview?mute=1"
+            allow="autoplay">
+            </iframe>
+
+        </div>
+
+
+
+
+        <div class="highlight-card" onclick="pauseMusic()">
+
+            <h3>
+                ZELZIS
+            </h3>
+
+            <iframe 
+            src="https://drive.google.com/file/d/1vt420K7xWsoi6uZzrjottTx0Yhwntdz4/preview?mute=1"
+            allow="autoplay">
+            </iframe>
+
+        </div>
+
+
+
+
+        <div class="highlight-card" onclick="pauseMusic()">
+
+            <h3>
+                LCccd
+            </h3>
+
+            <iframe 
+            src="https://drive.google.com/file/d/1tP-UFDOov-D6qdGogs-TCxqZBf8hglUx/preview?mute=1"
+            allow="autoplay">
+            </iframe>
+
+        </div>
+
+
+
+
+        <div class="highlight-card" onclick="pauseMusic()">
+
+            <h3>
+                JOSIAS
+            </h3>
+
+            <iframe 
+            src="https://drive.google.com/file/d/1S6BMUAj1x4fozLUz6BNK72lgF3-O-Um6/preview?mute=1"
+            allow="autoplay">
+            </iframe>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+        <!-- MURAL -->
+
+
+        <div id="mural" class="tab">
+
+
+            <h2>
+                MURAL
+            </h2>
+
+
+
+            <textarea 
+            id="muralInput"
+            placeholder="Adicione um clipe, aviso ou mensagem...">
+            </textarea>
+
+
+            <button onclick="saveMural()">
+                SALVAR
+            </button>
+
+
+
+            <div id="muralContent">
+
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+</section>
+
+
+
+
+
+<audio id="backgroundMusic" loop>
+    <source src="SUA_MUSICA.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

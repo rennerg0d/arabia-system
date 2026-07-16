@@ -1,0 +1,871 @@
+/* ============================
+   CONFIGURAÇÕES GERAIS
+============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+body {
+
+    background: #020202;
+
+    color: #00ff66;
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+/* ============================
+        CLASSES GERAIS
+============================ */
+
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+
+
+
+/* ============================
+        TELA DE BOOT
+============================ */
+
+
+#bootScreen {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+
+    radial-gradient(circle, #063d20, #000);
+
+}
+
+
+
+.boot-container {
+
+    width: 500px;
+
+    text-align: center;
+
+    color: #00ff66;
+
+    animation: aparecer 1s ease;
+
+}
+
+
+
+.boot-container h1 {
+
+    font-size: 45px;
+
+    letter-spacing: 8px;
+
+    text-shadow:
+
+    0 0 10px #00ff66,
+
+    0 0 30px #00ff66;
+
+}
+
+
+
+#bootText {
+
+    margin-top: 30px;
+
+    height: 120px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+}
+
+
+
+.progress {
+
+    width: 100%;
+
+    height: 12px;
+
+    border: 1px solid #00ff66;
+
+    margin-top: 20px;
+
+}
+
+
+
+#progressBar {
+
+    height: 100%;
+
+    width: 0%;
+
+    background: #00ff66;
+
+    box-shadow:
+
+    0 0 20px #00ff66;
+
+}
+
+
+
+
+
+/* ============================
+          LOGIN
+============================ */
+
+
+#loginScreen {
+
+    width:100vw;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    radial-gradient(circle,#032414,#000);
+
+}
+
+
+
+
+.login-box {
+
+    width:420px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid #00ff66;
+
+    background:
+
+    rgba(0,255,100,0.05);
+
+    box-shadow:
+
+    0 0 40px rgba(0,255,100,.4);
+
+    text-align:center;
+
+}
+
+
+
+
+.login-box h1 {
+
+    font-size:50px;
+
+    letter-spacing:10px;
+
+    text-shadow:
+
+    0 0 20px #00ff66;
+
+}
+
+
+
+
+.subtitle {
+
+    display:block;
+
+    margin-bottom:30px;
+
+    color:#8affb5;
+
+}
+
+
+
+
+.login-box input {
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0;
+
+
+    background:#000;
+
+
+    border:
+
+    1px solid #00ff66;
+
+
+    color:#00ff66;
+
+
+    outline:none;
+
+
+}
+
+
+
+
+.login-box button {
+
+
+    width:100%;
+
+    padding:15px;
+
+
+    margin-top:20px;
+
+
+    background:#00ff66;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+    font-weight:bold;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.login-box button:hover {
+
+
+    background:white;
+
+
+    box-shadow:
+
+    0 0 30px #00ff66;
+
+
+}
+
+
+
+
+
+
+
+/* ============================
+          TABLET
+============================ */
+
+
+#tablet {
+
+
+    width:90vw;
+
+    height:90vh;
+
+
+    margin:auto;
+
+
+    margin-top:5vh;
+
+
+    background:#030303;
+
+
+    border:
+
+    2px solid #00ff66;
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+
+    0 0 50px rgba(0,255,100,.5);
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+header {
+
+
+    height:90px;
+
+
+    border-bottom:
+
+    1px solid #00ff66;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    position:relative;
+
+
+}
+
+
+
+
+header h1 {
+
+
+    font-size:40px;
+
+
+    letter-spacing:15px;
+
+
+    text-shadow:
+
+
+    0 0 20px #00ff66;
+
+
+}
+
+
+
+
+.info {
+
+
+    position:absolute;
+
+
+    right:30px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    font-size:12px;
+
+
+}
+
+
+
+
+
+
+
+/* ============================
+       MENU LATERAL
+============================ */
+
+
+aside {
+
+
+    position:absolute;
+
+
+    left:5%;
+
+
+    top:20%;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.menu-item {
+
+
+    width:50px;
+
+
+    height:50px;
+
+
+    border:1px solid #00ff66;
+
+
+    border-radius:15px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    cursor:pointer;
+
+
+    overflow:hidden;
+
+
+    transition:.4s;
+
+
+    background:#000;
+
+
+}
+
+
+
+
+.menu-item:hover {
+
+
+    width:180px;
+
+
+    box-shadow:
+
+
+    0 0 20px #00ff66;
+
+
+}
+
+
+
+
+.icon {
+
+
+    min-width:50px;
+
+
+    text-align:center;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+.label {
+
+
+    opacity:0;
+
+
+    transition:.3s;
+
+
+    margin-left:10px;
+
+
+}
+
+
+
+.menu-item:hover .label {
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+
+
+/* ============================
+          CONTEÚDO
+============================ */
+
+
+main {
+
+
+    margin-left:100px;
+
+
+    padding:40px;
+
+
+}
+
+
+
+
+.tab {
+
+
+    display:none;
+
+
+}
+
+
+
+
+.tab.active {
+
+
+    display:block;
+
+
+}
+
+
+
+
+.tab h2 {
+
+
+    font-size:35px;
+
+
+    margin-bottom:30px;
+
+
+    text-shadow:
+
+
+    0 0 15px #00ff66;
+
+
+}
+
+
+
+
+
+
+/* PLAYERS */
+
+
+.players-container {
+
+
+    display:flex;
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+.player-card {
+
+
+    width:200px;
+
+
+    padding:25px;
+
+
+    border:1px solid #00ff66;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    background:
+
+
+    rgba(0,255,100,.05);
+
+
+}
+
+
+
+
+.avatar {
+
+
+    font-size:50px;
+
+
+}
+
+
+
+
+
+
+
+
+/* HIGHLIGHTS */
+
+
+.highlight-box {
+
+
+    border:1px solid #00ff66;
+
+
+    padding:40px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.camera {
+
+
+    font-size:80px;
+
+
+}
+
+
+
+
+
+
+
+/* MURAL */
+
+
+#muralInput {
+
+
+    width:100%;
+
+
+    height:150px;
+
+
+    background:#000;
+
+
+    color:#00ff66;
+
+
+    border:1px solid #00ff66;
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+#mural button {
+
+
+    margin-top:15px;
+
+
+    padding:12px 30px;
+
+
+    background:#00ff66;
+
+
+    border:none;
+
+
+}
+
+
+
+
+
+
+/* ============================
+          ANIMAÇÕES
+============================ */
+
+
+@keyframes aparecer {
+
+
+    from {
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+/* ============================
+        HIGHLIGHTS VIDEOS
+============================ */
+
+
+.highlights-container {
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:20px;
+
+    width:100%;
+
+}
+
+
+
+.highlight-card {
+
+    border:1px solid #00ff66;
+
+    border-radius:18px;
+
+    padding:15px;
+
+    background:
+
+    rgba(0,255,100,.05);
+
+    box-shadow:
+
+    0 0 20px rgba(0,255,100,.2);
+
+    transition:.3s;
+
+}
+
+
+
+.highlight-card:hover {
+
+    transform:scale(1.03);
+
+    box-shadow:
+
+    0 0 35px rgba(0,255,100,.6);
+
+}
+
+
+
+.highlight-card h3 {
+
+    text-align:center;
+
+    margin-bottom:12px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    text-shadow:
+
+    0 0 10px #00ff66;
+
+}
+
+
+
+.highlight-card iframe {
+
+    width:100%;
+
+    height:280px;
+
+    border:none;
+
+    border-radius:12px;
+
+}
