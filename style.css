@@ -814,7 +814,7 @@ main {
 
     background: rgba(0,255,100,.05);
 
-    text-align: center;
+    text-align:center;
 
 }
 
@@ -850,14 +850,14 @@ main {
 
 
 
-.highlight-card video {
+.highlight-card iframe {
 
-    width: 100%;
+    width:100%;
 
-    height: 300px;
+    height:300px;
 
-    object-fit: cover;
+    border:none;
 
-    border-radius: 15px;
+    border-radius:15px;
 
 }
