@@ -858,14 +858,14 @@ main {
 
 
 
-.highlight-card iframe {
+.highlight-card video {
 
-    width:100%;
+    width: 100%;
 
-    height:280px;
+    height: 350px;
 
-    border:none;
+    object-fit: cover;
 
-    border-radius:12px;
+    border-radius: 15px;
 
 }
