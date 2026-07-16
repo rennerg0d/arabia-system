@@ -794,13 +794,11 @@ main {
 
 .highlights-container {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    gap:20px;
-
-    width:100%;
+    gap: 20px;
 
 }
 
@@ -808,21 +806,15 @@ main {
 
 .highlight-card {
 
-    border:1px solid #00ff66;
+    border: 1px solid #00ff66;
 
-    border-radius:18px;
+    border-radius: 20px;
 
-    padding:15px;
+    padding: 15px;
 
-    background:
+    background: rgba(0,255,100,.05);
 
-    rgba(0,255,100,.05);
-
-    box-shadow:
-
-    0 0 20px rgba(0,255,100,.2);
-
-    transition:.3s;
+    text-align: center;
 
 }
 
@@ -862,7 +854,7 @@ main {
 
     width: 100%;
 
-    height: 350px;
+    height: 300px;
 
     object-fit: cover;
 
